@@ -1,10 +1,15 @@
-let sueldoBrutoAcordado = parseInt (prompt("Ingrese su sueldo Bruto acordado"));
-let diasDeAusencia = parseInt (prompt("Ingrese ausencias, dias por enfermedad, dias de ausencia, etc"));
+function calcularBruto(sueldo, diasDeAusencia) {
+    return sueldo / 30 * (30 - diasDeAusencia)
+}
 
-const sueldoBrutoDelMes = sueldoBrutoAcordado / 30 * (30- diasDeAusencia);
+function iniciarSimulador() {
+    let sueldoBrutoAcordado = parseInt(prompt("Ingrese su sueldo Bruto acordado"));
+    let diasDeAusencia = parseInt(prompt("Ingrese ausencias, dias por enfermedad, dias de ausencia, etc"));
+
+    const sueldoBrutoDelMes = calcularBruto(sueldoBrutoAcordado, diasDeAusencia);
 
 
-    console.log("sueldoBrutoDelMes",sueldoBrutoDelMes);
+    console.log("sueldoBrutoDelMes", sueldoBrutoDelMes);
 
     const jubilacion = sueldoBrutoDelMes / 100 * 11;
     const ley27017 = sueldoBrutoDelMes / 100 * 3;
@@ -17,9 +22,9 @@ const sueldoBrutoDelMes = sueldoBrutoAcordado / 30 * (30- diasDeAusencia);
     console.log("El sueldo neto a cobrar es: ", neto);
 
     alert("El sueldo neto a cobrar es: " + neto);
+}
 
-
-
+iniciarSimulador();
 
 
 
