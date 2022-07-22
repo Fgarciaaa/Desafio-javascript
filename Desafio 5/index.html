@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <form id="form" class="form-container">
+      <div class="inputs-container">
+        <div class="person-container">
+          <div class="input-container">
+            <label>Nombre:</label>
+            <input type="text" id="name" required />
+          </div>
+
+          <div class="input-container">
+            <label>Sueldo bruto acordado:</label>
+            <input type="number" id="salary" required />
+          </div>
+
+          <div class="input-container">
+            <label>Dias de ausencia:</label>
+            <input type="number" id="days-offs" required />
+          </div>
+        </div>
+      </div>
+
+      <button id="btn-add" class="orange" type="button">
+        Agregar otra persona
+      </button>
+      <button>Finalizar</button>
+      <div id="result"></div>
+    </form>
+
+    <script src="calculadorSueldo.js"></script>
+  </body>
+</html>
