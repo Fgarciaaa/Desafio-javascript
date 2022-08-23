@@ -77,3 +77,17 @@ button.orange:hover {
   border: 1px solid #d06f37;
   background-color: #d06f37;
 }
+
+.calculatusueldo {
+  color: #960096;
+  text-decoration: none;
+  font-size: 30px;
+  margin: 0px 20px; }
+
+ .topbar{
+  background: #fff;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+    padding: 0;
+    height: 40px;
+ }
